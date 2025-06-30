@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>East Africa Coffee Consultancy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fdfaf7;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #2c1e16;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1603894584373-52c1f7d1a8cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29mZmVlJTIwZmFybXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&q=80&w=1200') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .about, .services, .contact, .newsletter, .blog {
+      background: white;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #4e3629;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, textarea {
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #6b4e2d;
+      color: white;
+      border: none;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #523b21;
+    }
+
+    .blog-post {
+      margin-bottom: 20px;
+    }
+
+    .blog-post h3 {
+      margin-bottom: 5px;
+      color: #6b4e2d;
+    }
+
+    footer {
+      text-align: center;
+      background: #2c1e16;
+      color: white;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .hero h2 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>East Africa Coffee Consultancy</h1>
+  <p>Specialty Arabica | Sustainability | Farmer Empowerment</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>Empowering Coffee Communities Across East Africa</h2>
+</div>
+
+<section id="about" class="about">
+  <h2>About Us</h2>
+  <p>We are a Uganda-based coffee consultancy firm with operations across Kenya, Uganda, and Burundi. Our founder is a certified coffee cupper with 13+ years of hands-on experience in quality management, farmer training, and sustainable sourcing. We specialize in specialty Arabica coffee, sustainable practices, and delivering impact in coffee communities through AAA principles and traceable value chains.</p>
+</section>
+
+<section id="services" class="services">
+  <h2>Our Services</h2>
+  <ul>
+    <li>Coffee and Barista Training</li>
+    <li>Farmer Sustainability Initiatives</li>
+    <li>Cupping and Green Coffee Sampling</li>
+    <li>Roasted Coffee Training</li>
+    <li>Coffee Processing Integration</li>
+    <li>Coffee Farming Techniques and Agronomy</li>
+  </ul>
+</section>
+
+<section id="blog" class="blog">
+  <h2>Latest Blog Posts</h2>
+  <div class="blog-post">
+    <h3>How to Build a Sustainable Coffee Value Chain</h3>
+    <p>Explore practical steps to implement AAA programs and make sustainability profitable for farmers and roasters alike.</p>
+  </div>
+  <div class="blog-post">
+    <h3>Barista Skills: The Art of Brewing Excellence</h3>
+    <p>Why barista training is vital in the specialty coffee industry and how we help build quality from bean to cup.</p>
+  </div>
+</section>
+
+<section class="newsletter">
+  <h2>Subscribe to Our Newsletter</h2>
+  <form action="https://formspree.io/f/your-form-id" method="POST">
+    <input type="email" name="email" placeholder="Your Email Address" required />
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <form action="https://formspree.io/f/your-form-id" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 East Africa Coffee Consultancy. All rights reserved.
+</footer>
+
+</body>
+</html>
